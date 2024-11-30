@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start of the flex container */
+    align-items: flex-start; /* Align items to the top of the flex container */
+    height: 100vh;
+    background-color: #222;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 2px;
+    width: 240px;
+    height: 320px;
+    background-color: #444;
+}
+
+.candy {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.selected {
+    border: 2px solid white;
+}
+
+.to-swap {
+    border: 2px solid yellow;
+}
